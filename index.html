@@ -37,12 +37,12 @@
 				</div>
 				<nav class="menu-principal">
 					<ul id="menu">
-						<li data-menuanchor="pagePromix"><a href="#page-promix">A promix</a></li>
-						<li data-menuanchor="pageServico"><a href="">Serviços</a></li>
-						<li data-menuanchor="pageConcreto"><a href="">Concretos</a></li>
-						<li data-menuanchor="pageObra"><a href="">Obras</a></li>
-						<li data-menuanchor="pagePedido"><a href="">Faça seu pedido</a></li>
-						<li data-menuanchor="pageContato"><a href="">Contato</a></li>
+						<li data-menuanchor="pagePromix"><a href="#pagePromix">A promix</a></li>
+						<li data-menuanchor="pageServico"><a href="#pageServico">Serviços</a></li>
+						<li data-menuanchor="pageConcreto"><a href="#pageConcreto">Concretos</a></li>
+						<li data-menuanchor="pageObras"><a href="#pageObras">Obras</a></li>
+						<li data-menuanchor="pagePedido"><a href="#pagePedido">Faça seu pedido</a></li>
+						<li data-menuanchor="pageContato"><a href="#pageContato">Contato</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -61,10 +61,9 @@
 							<li><img src="img/visa.png" alt=""></li>
 							<li><img src="img/americanx.png" alt=""></li>
 						</ul>
-						<a href="#"><button class="pedido-button">Faça o seu pedido</button></a>
+						<a href="#pagePedido"><button class="pedido-button">Faça o seu pedido</button></a>
 					</div>
-				</div>
-				<div class="pelicula"></div>	
+				</div>	
 				<div id="carousel-slide" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 					<ol class="carousel-indicators">
@@ -74,7 +73,14 @@
 					</ol>
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
+						<div class="pelicula"></div>
 						<div class="item active">
+							<div class="slide-foto" style="background-image: url('img/fundo.jpg');"></div>
+						</div>
+						<div class="item">
+							<div class="slide-foto" style="background-image: url('img/fundo.jpg');"></div>
+						</div>
+						<div class="item">
 							<div class="slide-foto" style="background-image: url('img/fundo.jpg');"></div>
 						</div>
 					</div>
@@ -368,9 +374,9 @@
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		responsiveWidth: 992
-		// anchors: ['pagePromix'],
-		// menu: '#menu'
+		responsiveWidth: 992,
+		anchors: ['','pagePromix','pageServico','pageConcreto','pageObras','pagePedido','pageContato'],
+		menu: '#menu'
 	});
 
 	$('.button-mobile').on('click thoutchstart', function(){
