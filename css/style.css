@@ -720,6 +720,7 @@ footer{
 		margin-bottom: 0px;
 	}
 
+
 /* ------------------------------------------------------------- Break Points ------------------------------------------------------------- */
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -1021,6 +1022,15 @@ footer{
 			background-color: transparent;
 			margin: -47px -15px;
 			height: auto;		
+		}
+
+			
+		.copyrigth p{
+			text-align: left;
+		}
+
+		.developer p{
+			text-align: right;
 		}
 
 	}

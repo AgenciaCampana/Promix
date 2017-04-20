@@ -257,6 +257,7 @@
 					</div>
 				</section>
 			</div>
+	<!--                  **********************  Obras  **********************           -->
 			<div class="section galeria black" data-anchor="pageObras">
 				<section class="espace-margin">
 					<div class="container">
@@ -289,6 +290,7 @@
 					</div>
 				</section>
 			</div>
+	<!--                  **********************  Pedido  **********************           -->
 			<div class="section pedido black" style="background-image: url('img/person-contact.jpg');" data-anchor="pagePedido">
 				<section class="espace-margin">
 					<div class="container">
@@ -302,9 +304,9 @@
 									<div class="content-call">
 										<h4>Ligue agora mesmo para o nosso Call Center</h4>
 										<ul>
-											<li class="phone"><a href="+552130303752">(21) 3030-3752</a></li>
+											<li class="phone"><a href="tel:+552130303752">(21) 3030-3752</a></li>
 											<li>OU</li>
-											<li class="phone"><a href="+552130303751">(21) 3030-3751</a></li>
+											<li class="phone"><a href="tel:+552130303751">(21) 3030-3751</a></li>
 										</ul>
 									</div>
 								</div>
@@ -324,6 +326,7 @@
 					</div>
 				</section>
 			</div>
+	<!--                  **********************  Contato  **********************           -->
 			<div class="section contato" style="background-image: url('img/fundo-contato.jpg');" data-anchor="pageContato">
 				<section class="espace-margin">
 					<div class="col-xs-12 title-page">
@@ -349,6 +352,7 @@
 					</div>
 				</section>
 			</div>
+	<!--                  **********************  Footer  **********************           -->
 			<footer class="section fp-auto-height">
 				<div class="container-fluid">
 					<div class="col-xs-12 col-md-4 col-lg-4 copyrigth">
@@ -362,7 +366,7 @@
 						</ul>
 					</div>
 					<div class="col-xs-12 col-md-4 col-lg-4 developer">
-						<p>Desenvolvido por: <img src="" alt=""></p>
+						<p>Desenvolvido por: <img src="img/agencia-campana_logo.png" width="90" alt=""></p>
 					</div>
 				</div>	
 			</footer>
@@ -375,7 +379,7 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		responsiveWidth: 992,
-		anchors: ['','pagePromix','pageServico','pageConcreto','pageObras','pagePedido','pageContato'],
+		anchors: ['Inicio','pagePromix','pageServico','pageConcreto','pageObras','pagePedido','pageContato', 'Rodape'],
 		menu: '#menu'
 	});
 
@@ -404,24 +408,24 @@ $(document).ready(function() {
     //     }
     // }); 
 
-    var responsiveTela = function () {
-	    var bloco = $( ".section" ).hasClass( "fp-table");
-	    var Moveu = $( ".body" ).hasClass( "fp-viewing-0-0");
-	    var widthAll = $('body').width()
-	    if (Moveu = true) {
-	    	$('.box-logo-vendas').removeClass("roll");
-		    $('.menu').removeClass("roll");
-		}if (true) {}
+ //    var responsiveTela = function () {
+	//     var bloco = $( ".section" ).hasClass( "fp-table");
+	//     var Moveu = $( ".body" ).hasClass( "fp-viewing-0-0");
+	//     var widthAll = $('body').width()
+	//     if (Moveu = true) {
+	//     	$('.box-logo-vendas').removeClass("roll");
+	// 	    $('.menu').removeClass("roll");
+	// 	}if (true) {}
 
-		else{
-			$('.box-logo-vendas').removeClass("roll");
-			$('.menu').removeClass("roll");
-		}
-	};
+	// 	else{
+	// 		$('.box-logo-vendas').removeClass("roll");
+	// 		$('.menu').removeClass("roll");
+	// 	}
+	// };
 
-	responsiveTela();
-    $(window).resize(function () {
-        responsiveTela();
-    });
+	// responsiveTela();
+ //    $(window).resize(function () {
+ //        responsiveTela();
+ //    });
 });
 </script>
