@@ -747,9 +747,9 @@ footer{
 	@media (min-width: 992px) {
 
 		.home{
-			height: auto;
+			height: auto !important;
 		}
-		
+
 		.pedido-prin{
 			padding: 0% 53% 0% 5%;
 		}
