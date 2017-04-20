@@ -254,6 +254,10 @@ a{text-decoration: none;}
 		position: relative;
 	}
 
+	.home{
+		height: 800px !important;
+	}
+
 		.content-home{
 			display: flex;
 			align-items: center;
@@ -741,6 +745,10 @@ footer{
 
 /*Large devices (desktops, 992px and up)*/
 	@media (min-width: 992px) {
+
+		.home{
+			height: auto;
+		}
 		.pedido-prin{
 			padding: 0% 53% 0% 5%;
 		}
