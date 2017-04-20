@@ -548,6 +548,15 @@ a{text-decoration: none;}
 		background-repeat: no-repeat;
 	}
 
+	.img-obra{
+	    height: 280px;
+	    width: 100%;
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    margin-bottom: 20px;	
+	}
+
 /* ------------------ Content Pedido -------------------- */
 
 .pedido{
